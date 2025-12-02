@@ -15,37 +15,69 @@ This repository is structured professionally with modular Python scripts, notebo
 ---
 
 ## 📂 Project Structure
-```
-amazon-reviews-nlp-analysis/
-│
-├── data/
-│   └── processed/
-│       ├── aspect_importance_scores.csv
-│       ├── aspect_sentiment_distribution.csv
-│       ├── aspect_sentiment_summary.csv
-│       ├── review_aspect_sentiment.csv
-│       ├── review_summarization_samples.csv
-│
-├── notebooks/
-│   └── amazon-sentiment-nlp.ipynb
-│
-├── outputs/
-│   └── figures/
-│       ├── aspect_frequency.png
-│       ├── aspect_importance.png
-│       ├── aspect_sentiment.png
-│       ├── review_length.png
-│       ├── sentiment_polarity.png
-│       ├── wordclouds.png
-│
-├── src/
-│   ├── preprocessing.py
-│   ├── aspect_extraction.py
-│   ├── sentiment_analysis.py
-│   ├── importance_scoring.py
-│   ├── summarization.py
-│   └── visualization.py
-```
+
+Below is the complete folder structure for this project.  
+Click to expand each section and access individual files.
+
+---
+<details>
+<summary><strong>📁 data/processed</strong></summary>
+
+| File | Description | Link |
+|------|-------------|------|
+| amazon_nlp_project_results.csv | (Not uploaded / Large file excluded) | — |
+| aspect_importance_scores.csv | Aspect ranking with importance score | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/data/processed/aspect_importance_scores.csv) |
+| aspect_sentiment_distribution.csv | Sentiment label distribution per aspect | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/data/processed/aspect_sentiment_distribution.csv) |
+| aspect_sentiment_summary.csv | Average sentiment per aspect | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/data/processed/aspect_sentiment_summary.csv) |
+| review_aspect_sentiment.csv | Aspect + sentiment per review | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/data/processed/review_aspect_sentiment.csv) |
+| review_summarization_samples.csv | BART & T5 summaries for sample reviews | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/data/processed/review_summarization_samples.csv) |
+</details>
+
+---
+
+<details>
+<summary><strong>📁 notebooks</strong></summary>
+
+| Notebook | Description | Link |
+|----------|-------------|------|
+| amazon-sentiment-nlp.ipynb | Main project notebook with full pipeline | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/notebooks/amazon-sentiment-nlp.ipynb) |
+
+</details>
+
+---
+
+<details>
+<summary><strong>📁 outputs/figures</strong></summary>
+
+| Figure | Description | Link |
+|--------|-------------|------|
+| aspect_frequency.png | Aspect count distribution | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/outputs/figures/aspect_frequency.png) |
+| aspect_importance.png | Aspect importance score visualization | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/outputs/figures/aspect_importance.png) |
+| aspect_sentiment.png | Average sentiment per aspect | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/outputs/figures/aspect_sentiment.png) |
+| review_length.png | Review length distribution | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/outputs/figures/review_length.png) |
+| sentiment_polarity.png | Sentiment polarity histogram | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/outputs/figures/sentiment_polarity.png) |
+| wordclouds.png | Wordcloud of reviews | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/outputs/figures/wordclouds.png) |
+
+</details>
+
+---
+
+<details>
+<summary><strong>📁 src (Python Modules)</strong></summary>
+
+| Script | Description | Link |
+|--------|-------------|------|
+| preprocessing.py | Cleaning, tokenization, stopword removal utilities | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/src/preprocessing.py) |
+| aspect_extraction.py | Keyword-based aspect mining logic | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/src/aspect_extraction.py) |
+| sentiment_analysis.py | Polarity scoring + sentiment labeling | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/src/sentiment_analysis.py) |
+| importance_scoring.py | Computes aspect importance using freq × sentiment | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/src/importance_scoring.py) |
+| summarization.py | BART & T5 summarization utilities | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/src/summarization.py) |
+| visualization.py | Wordcloud + graph saving functions | [Click Here](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/blob/main/amazon-reviews-nlp-analysis/src/visualization.py) |
+
+</details>
+
+---
+
 
 ---
 
