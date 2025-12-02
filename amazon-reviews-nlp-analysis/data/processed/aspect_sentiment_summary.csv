@@ -1,0 +1,10 @@
+aspects,aspect_sentiment,sentiment_label
+price,0.21614760070955563,Positive
+performance,0.19626753654576579,Positive
+delivery,0.18949937574421438,Positive
+quality,0.14534897574114694,Positive
+battery,0.11185098367189861,Positive
+screen,0.11147400319189041,Positive
+design,0.10866496666633135,Positive
+service,0.0958172696892732,Neutral
+packaging,0.06519568471089758,Neutral
