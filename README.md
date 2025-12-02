@@ -9,8 +9,28 @@ The goal is to extract meaningful customer insights through:
 - Topic modeling  
 - Transformer-based summarization (BART & T5)  
 - Visual data storytelling  
+---
+<details>
+<summary><strong>📚 Table of Contents</strong> (click to expand)</summary>
+
+- [🧠 Introduction](#-introduction)
+- [📦 Dataset](#-dataset)
+- [📂 Project Structure](#-project-structure)
+- [🛠️ Key Features](#️-key-features)
+- [▶️ How to Run the Project](#️-how-to-run-the-project)
+- [📊 Results Overview](#-results-overview)
+- [🚀 Future Improvements](#-future-improvements)
+- [👤 Author](#-author)
+
+</details>
+
+---
 
 This repository is structured professionally with modular Python scripts, notebooks, outputs, and documentation, making it suitable for real-world ML/NLP workflows and showcasing strong project engineering skills.
+### 📦 Dataset
+This project uses the publicly available **Amazon Reviews dataset** from Kaggle:  
+🔗 https://www.kaggle.com/datasets/bittlingmayer/amazonreviews
+
 
 ---
 
@@ -125,7 +145,7 @@ All visual outputs are stored under `outputs/figures/`.
 
 ### **1. Clone the Repository**
 ```
-git clone https://github.com/YOUR-USERNAME/amazon-reviews-nlp-analysis.git
+git clone https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis.git
 cd amazon-reviews-nlp-analysis
 ```
 
@@ -152,23 +172,21 @@ from src.aspect_extraction import extract_aspects_from_text
 ## 📊 Results Overview
 
 ### ⭐ Aspect Importance
-Identifies which aspects customers care about most.
-
-### ⭐ Aspect Sentiment Summary
-Aggregates positivity/negativity for each feature.
-
-### ⭐ Summarization
-Both BART & T5 models provide compact summaries of long reviews.
-
-### ⭐ Final Outputs
-Stored under:
-```
-data/processed/
-```
+Identifies which product features customers talk about the most and express strong sentiment about.
+This helps reveal what matters most to users — for example, battery life or delivery issues.
+###  Aspect Sentiment Summary
+Shows the average positivity or negativity toward each aspect.
+This helps understand customer satisfaction or dissatisfaction at a granular level.
+###  Summarization
+BART & T5 transformer models generate concise summaries of long reviews, making it easier to extract insights without reading full text.
+###  Final Outputs
+All final processed outputs are available here:  
+👉 **[Click to View Processed Data](https://github.com/Ankush-Patil99/amazon-reviews-nlp-analysis/tree/main/amazon-reviews-nlp-analysis/data/processed)**
 
 ---
 
 ## 🚀 Future Improvements
+#### Here are a few enhancements planned for upcoming versions:
 - Deploy as an API using FastAPI  
 - Add sentiment classification model (BERT)  
 - Build an interactive dashboard  
@@ -179,5 +197,6 @@ data/processed/
 ## 👤 Author
 **Ankush Patil**  
 Machine Learning & NLP Engineer  
-- LinkedIn: https://www.linkedin.com/in/YOUR-LINK  
-- Email: your.email@example.com  
+📧 **Email**: ankpatil1203@gmail.com  
+💼 **LinkedIn**: www.linkedin.com/in/ankush-patil-48989739a  
+🌐 **GitHub**: https://github.com/Ankush-Patil99  
